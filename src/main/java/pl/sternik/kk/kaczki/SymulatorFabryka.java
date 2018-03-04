@@ -49,5 +49,9 @@ public class SymulatorFabryka {
 		gesAdapter.lataj();
 		gesAdapter.plywaj();
 		gesAdapter.kwacz();
+		
+		//Przyklad na uzycie ala fabryk z enumem
+		 Kaczka kaczka = KaczkaTypy.Drewniana.getInstance("z drewana lipowego");
+		 kaczka.wyswietl();
 	}
 }
