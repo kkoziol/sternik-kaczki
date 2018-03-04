@@ -39,5 +39,15 @@ public class Symulator {
 		gumowa.setKwakanie(new Niemowa());
 		
 		gumowa.kwacz();
+		
+		Ges ges = new Ges("dzika");
+		Kaczka gesAdapter = new GesKaczkaAdapter(ges);
+		
+		kaczki.add(gesAdapter);
+		
+		gesAdapter.wyswietl();
+		gesAdapter.lataj();
+		gesAdapter.plywaj();
+		gesAdapter.kwacz();
 	}
 }
